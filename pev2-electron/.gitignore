@@ -1,0 +1,7 @@
+*
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!pev2.desktop
+!pev2.sh
+!remove-demo-notice.patch
