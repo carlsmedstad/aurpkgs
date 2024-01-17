@@ -1,0 +1,7 @@
+*
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!protonmail-bridge.desktop
+!protonmail-bridge.service
+!remove-vcpkg-dependency.patch
