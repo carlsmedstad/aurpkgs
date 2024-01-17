@@ -1,0 +1,7 @@
+*
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!lsyncd.service
+!lsyncd.sysusers
+!use-lua53.patch
