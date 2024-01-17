@@ -1,0 +1,9 @@
+*
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!use-system-scala.patch
+!neo4j.executable-template
+!neo4j.service
+!neo4j.sysusers
+!neo4j.tmpfiles
