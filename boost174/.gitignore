@@ -1,0 +1,5 @@
+*
+!.gitignore
+!PKGBUILD
+!.SRCINFO
+!python311-compatibility.patch
