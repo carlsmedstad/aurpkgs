@@ -1,0 +1,23 @@
+pkgbase = pg_activity
+	pkgdesc = Top-like application for PostgreSQL server activity monitoring
+	pkgver = 3.4.2
+	pkgrel = 3
+	url = https://github.com/dalibo/pg_activity
+	arch = any
+	license = LicenseRef-PostgreSQL
+	checkdepends = postgresql
+	checkdepends = python-pytest
+	checkdepends = python-pytest-postgresql
+	makedepends = python-build
+	makedepends = python-installer
+	makedepends = python-wheel
+	depends = python
+	depends = python-attrs
+	depends = python-blessed
+	depends = python-humanize
+	depends = python-psutil
+	depends = python-psycopg
+	source = pg_activity-3.4.2.tar.gz::https://github.com/dalibo/pg_activity/archive/refs/tags/v3.4.2.tar.gz
+	sha256sums = 1e847d93244b50fb5bbb881c1b8b4fe78769c8f6b188f8cfa5a8c58ac7e51f0e
+
+pkgname = pg_activity
