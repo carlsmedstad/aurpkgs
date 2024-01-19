@@ -21,6 +21,9 @@ work horse is a custom [aurutils][] command, `aur-commit` from
 [carlsmedstad/aurutils-extra][], which performs a number of checks in addition
 to building packages.
 
+In order to provide timely updates, I regularly visit [Repology][].
+
+[Repology]: https://repology.org/
 [aurutils]: https://github.com/aurutils/aurutils
 
 ## Structure of this Repository
