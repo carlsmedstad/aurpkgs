@@ -41,5 +41,12 @@ the following characteristics:
   all the changes to individual packages in this repository and prefer to keep
   the commit history clean.
 
+Updates to this repository are currently done manually (semi-regularly) by
+executing the following:
+
+```sh
+aur-list-pkgs --pkgbase | xargs aur-sync-super-repo
+```
+
 [aurpublish]: https://github.com/eli-schwartz/aurpublish
 [carlsmedstad/aurutils-extra]: https://github.com/carlsmedstad/aurutils-extra
