@@ -50,3 +50,9 @@ aur-list-pkgs --pkgbase | xargs aur-sync-super-repo
 
 [aurpublish]: https://github.com/eli-schwartz/aurpublish
 [carlsmedstad/aurutils-extra]: https://github.com/carlsmedstad/aurutils-extra
+
+## Copyright
+
+All package additions and edits authored by me are licensed under the
+[Zero-Clause BSD license](https://spdx.org/licenses/0BSD.html). To check if a
+change is authored by me, refer to the corresponding AUR repository.
