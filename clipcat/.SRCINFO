@@ -1,0 +1,16 @@
+pkgbase = clipcat
+	pkgdesc = A clipboard manager written in Rust Programming Language
+	pkgver = 0.16.2
+	pkgrel = 2
+	url = https://github.com/xrelkd/clipcat
+	arch = x86_64
+	license = GPL-3.0-only
+	makedepends = cargo
+	makedepends = libgit2
+	makedepends = protobuf
+	depends = gcc-libs
+	depends = glibc
+	source = clipcat-0.16.2.tar.gz::https://github.com/xrelkd/clipcat/archive/refs/tags/v0.16.2.tar.gz
+	sha256sums = e784ec4a3799fa003e2d298477d8a627d1e02fdb147136fb245fdf87d34b96d3
+
+pkgname = clipcat
