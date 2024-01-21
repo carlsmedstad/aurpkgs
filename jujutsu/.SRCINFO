@@ -1,0 +1,16 @@
+pkgbase = jujutsu
+	pkgdesc = Git-compatible VCS that is both simple and powerful
+	pkgver = 0.12.0
+	pkgrel = 1
+	url = https://github.com/martinvonz/jj
+	arch = x86_64
+	license = Apache-2.0
+	makedepends = cargo
+	depends = gcc-libs
+	depends = glibc
+	depends = zlib
+	options = !lto
+	source = jujutsu-0.12.0.tar.gz::https://github.com/martinvonz/jj/archive/refs/tags/v0.12.0.tar.gz
+	sha256sums = da90259cd1003d9f87af277c8b20625f3b07c3fe785fb490fe17659f2082852f
+
+pkgname = jujutsu
