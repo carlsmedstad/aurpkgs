@@ -45,7 +45,7 @@ Updates to this repository are currently done manually (semi-regularly) by
 executing the following:
 
 ```sh
-aur-list-pkgs --pkgbase | xargs aur-sync-super-repo
+make sync
 ```
 
 [aurpublish]: https://github.com/eli-schwartz/aurpublish
