@@ -21,10 +21,22 @@ work horse is a custom [aurutils][] command, `aur-commit` from
 [carlsmedstad/aurutils-extra][], which performs a number of checks in addition
 to building packages.
 
-In order to provide timely updates, I regularly visit [Repology][].
+### Checking for New Versions
 
-[Repology]: https://repology.org/
+All packages, except those in [`.nvcheckerignore`](.nvcheckerignore), contain a
+`.nvchecker.toml` file and new version can as such be discovered using
+[nvchecker][]. To check for new versions, run:
+
+```sh
+make check-versions
+```
+
+**NOTE:** This functionality relies on an as-of-yet unreleased version of
+`pkgctl` from [devtools][]
+
 [aurutils]: https://github.com/aurutils/aurutils
+[nvchecker]: https://github.com/lilydjwg/nvchecker
+[devtools]: https://gitlab.archlinux.org/archlinux/devtools
 
 ## Structure of this Repository
 
