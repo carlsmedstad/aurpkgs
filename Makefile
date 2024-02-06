@@ -7,3 +7,7 @@ check-versions:
 	aur-list-pkgs --pkgbase \
 		| grep -vxf .nvcheckerignore \
 		| xargs pkgctl version check
+
+.PHONY: check-watchlist
+check-watchlist:
+	./check-watchlist
