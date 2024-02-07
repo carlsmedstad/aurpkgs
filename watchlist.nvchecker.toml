@@ -1,9 +1,3 @@
-[hotspot]
-source = "github"
-github = "KDAB/hotspot"
-prefix = "v"
-use_max_tag = true
-
 [ruby-maxitest]
 source = "archpkg"
 archpkg = "ruby-maxitest"
