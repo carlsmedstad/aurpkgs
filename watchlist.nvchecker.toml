@@ -1,7 +1,11 @@
-[ruby-maxitest]
-source = "archpkg"
-archpkg = "ruby-maxitest"
-
 [python-pint]
 source = "archpkg"
 archpkg = "python-pint"
+
+[ruby-base64]
+source = "archpkg"
+archpkg = "ruby-base64"
+
+[ruby-maxitest]
+source = "archpkg"
+archpkg = "ruby-maxitest"
