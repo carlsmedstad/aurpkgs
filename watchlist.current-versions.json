@@ -1,4 +1,5 @@
 {
+  "dotnet-sdk": "8.0.4.sdk104-1",
   "python-pint": "0.19.2-3",
   "ruby-base64": "0.1.1-4",
   "ruby-maxitest": "4.5.0-1"

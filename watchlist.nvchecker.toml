@@ -1,3 +1,7 @@
+[dotnet-sdk]
+source = "archpkg"
+archpkg = "dotnet-sdk"
+
 [python-pint]
 source = "archpkg"
 archpkg = "python-pint"
