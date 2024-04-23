@@ -1,17 +1,18 @@
-# Maintainer: Carl Smedstad <carl.smedstad at protonmail dot com>
+# Maintainer: Carl Smedstad <carsme@archlinux.org>
 # Contributor: Luis Martinez <luis dot martinez at disroot dot org>
 # Contributor: Moon Sungjoon <sumoon at seoulsaram dot org>
 # Contributor: Yurii Kolesnykov <root@yurikoles.com>
 
 pkgname=slack-electron
 pkgver=4.37.101
-pkgrel=1
+pkgrel=2
 pkgdesc="Slack Desktop (Beta) for Linux, using the system Electron package"
 arch=(x86_64)
 url="https://slack.com/downloads/linux"
 license=(LicenseRef-SlackProprietary)
+_electron_version=29
 depends=(
-  electron
+  "electron$_electron_version"
   gcc-libs
   glibc
   libx11
@@ -27,12 +28,14 @@ source=(
 noextract=("$pkgname-$pkgver.deb")
 sha256sums=(
   'c939120c8559f4077fd808b4f0406cd7341180ab32ff6151ad98e1a84055aa6e'
-  '7d3b40e668f27cc94eeb3789f4e6d30601946c3b475ab718d01a7008919357b8'
+  '1b2229fa419ede9858fb0af5351add8f65ddc573abb043d44b4ef979a8bbd996'
 )
 
 _archive="$pkgname-$pkgver"
 
 prepare() {
+  sed -i "s/@ELECTRON_VERSION@/$_electron_version/" slack.sh
+
   mkdir -p "$_archive"
   bsdtar -xf "$pkgname-$pkgver.deb" -C "$_archive"
   bsdtar -xf "$_archive/data.tar.xz" -C "$_archive"
@@ -55,12 +58,10 @@ package() {
   cd "$_archive"
 
   install -dm755 "$pkgdir/usr/lib/slack/resources/"
-  cp --archive -t "$pkgdir/usr/lib/slack/resources/" \
-    usr/lib/slack/resources/*
+  cp -a -t "$pkgdir/usr/lib/slack/resources/" usr/lib/slack/resources/*
 
   install -dm755 "$pkgdir/usr/lib/slack/locales/"
-  cp --archive -t "$pkgdir/usr/lib/slack/locales/" \
-    usr/lib/slack/locales/*
+  cp -a -t "$pkgdir/usr/lib/slack/locales/" usr/lib/slack/locales/*
 
   install -Dm644 -t "$pkgdir/usr/lib/slack" \
     usr/lib/slack/LICENSE \

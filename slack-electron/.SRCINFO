@@ -1,11 +1,11 @@
 pkgbase = slack-electron
 	pkgdesc = Slack Desktop (Beta) for Linux, using the system Electron package
 	pkgver = 4.37.101
-	pkgrel = 1
+	pkgrel = 2
 	url = https://slack.com/downloads/linux
 	arch = x86_64
 	license = LicenseRef-SlackProprietary
-	depends = electron
+	depends = electron29
 	depends = gcc-libs
 	depends = glibc
 	depends = libx11
@@ -17,6 +17,6 @@ pkgbase = slack-electron
 	source = slack-electron-4.37.101.deb::https://downloads.slack-edge.com/releases/linux/4.37.101/prod/x64/slack-desktop-4.37.101-amd64.deb
 	source = slack.sh
 	sha256sums = c939120c8559f4077fd808b4f0406cd7341180ab32ff6151ad98e1a84055aa6e
-	sha256sums = 7d3b40e668f27cc94eeb3789f4e6d30601946c3b475ab718d01a7008919357b8
+	sha256sums = 1b2229fa419ede9858fb0af5351add8f65ddc573abb043d44b4ef979a8bbd996
 
 pkgname = slack-electron
