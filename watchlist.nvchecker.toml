@@ -2,10 +2,6 @@
 source = "archpkg"
 archpkg = "dotnet-sdk"
 
-[python-pint]
-source = "archpkg"
-archpkg = "python-pint"
-
 [ruby-base64]
 source = "archpkg"
 archpkg = "ruby-base64"
