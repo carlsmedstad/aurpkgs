@@ -1,4 +1,4 @@
 [slack-electron]
 source = "regex"
-url = "https://slack.com/downloads/linux"
-regex = '<span class="page-downloads__hero__meta-text__version">Version (\d+\.\d+\.\d+)</span>'
+url = "https://slack.com/release-notes/linux"
+regex = 'Slack (\d+\.\d+\.\d+)'
