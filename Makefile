@@ -1,10 +1,10 @@
 .PHONY: sync
 sync:
-	aur-list-pkgs --pkgbase | xargs aur-sync-super-repo
+	aur-lspkg --repo aur --pkgbase | xargs aur-sync-super-repo
 
 .PHONY: check-versions
 check-versions:
-	aur-list-pkgs --pkgbase \
+	aur-lspkg --repo aur --pkgbase \
 		| grep -vxf .nvcheckerignore \
 		| xargs pkgctl version check
 
