@@ -1,10 +1,13 @@
+MAINTAINER = carsme
+
 .PHONY: sync
 sync:
-	aur-lspkg --repo aur --pkgbase | xargs aur-sync-super-repo
+	aur-lspkg --repo aur --maintainer $(MAINTAINER) --pkgbase \
+		| xargs aur-sync-super-repo
 
 .PHONY: check-versions
 check-versions:
-	aur-lspkg --repo aur --pkgbase \
+	aur-lspkg --repo aur --maintainer $(MAINTAINER) --pkgbase \
 		| grep -vxf .nvcheckerignore \
 		| xargs pkgctl version check
 
