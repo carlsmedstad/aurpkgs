@@ -5,7 +5,3 @@ archpkg = "dotnet-sdk"
 [ruby-base64]
 source = "archpkg"
 archpkg = "ruby-base64"
-
-[ruby-maxitest]
-source = "archpkg"
-archpkg = "ruby-maxitest"

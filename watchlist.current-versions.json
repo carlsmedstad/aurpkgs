@@ -1,5 +1,4 @@
 {
   "dotnet-sdk": "8.0.4.sdk104-1",
-  "ruby-base64": "0.1.1-4",
-  "ruby-maxitest": "4.5.0-1"
+  "ruby-base64": "0.1.1-4"
 }
