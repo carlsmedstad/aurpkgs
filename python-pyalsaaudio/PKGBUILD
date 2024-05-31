@@ -1,4 +1,4 @@
-# Maintainer: Carl Smedstad <carl.smedstad at protonmail dot com>
+# Maintainer: Carl Smedstad <carsme@archlinux.org>
 # Contributor: Andrew Steinke <rkcf@rkcf.me>
 # Contributor: carstene1ns <arch carsten-teibes de> - http://git.io/ctPKG
 # Contributor: speps <speps at aur dot archlinux dot org>
@@ -6,8 +6,8 @@
 
 pkgname=python-pyalsaaudio
 _pkgname=${pkgname#python-}
-pkgver=0.10.0
-pkgrel=3
+pkgver=0.11.0
+pkgrel=1
 pkgdesc="ALSA wrappers for Python"
 arch=(x86_64 i686 armv7h)
 url="https://github.com/larsimmisch/pyalsaaudio"
@@ -23,7 +23,7 @@ makedepends=(
   python-wheel
 )
 source=("$pkgname-$pkgver.tar.gz::$url/archive/$pkgver.tar.gz")
-sha256sums=('6d3555fc4a84d969cfe160b651a3744aa479adb74299aa87a026c9283db19fdf')
+sha256sums=('4609d0181a85a3ed5491d362a5450b957c5ba5fd43cd23d1e5895d6736e2d083')
 
 _archive="$_pkgname-$pkgver"
 
