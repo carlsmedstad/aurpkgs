@@ -5,3 +5,7 @@ archpkg = "dotnet-sdk"
 [ruby-base64]
 source = "archpkg"
 archpkg = "ruby-base64"
+
+[python-flask]
+source = "archpkg"
+archpkg = "python-flask"

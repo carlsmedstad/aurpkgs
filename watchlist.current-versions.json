@@ -1,4 +1,5 @@
 {
   "dotnet-sdk": "8.0.5.sdk105-1",
-  "ruby-base64": "0.1.1-4"
+  "ruby-base64": "0.1.1-4",
+  "python-flask": "2.3.3-2"
 }
