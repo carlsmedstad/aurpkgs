@@ -1,5 +1,0 @@
-[protonmail-bridge]
-source = "github"
-github = "ProtonMail/proton-bridge"
-prefix = "v"
-use_latest_release = true
