@@ -1,5 +1,17 @@
 {
-  "dotnet-sdk": "8.0.5.sdk105-1",
-  "ruby-base64": "0.1.1-4",
-  "python-flask": "2.3.3-2"
+  "version": 2,
+  "data": {
+    "dotnet-sdk": {
+      "version": "8.0.6.sdk106-1",
+      "url": "https://archlinux.org/packages/extra/x86_64/dotnet-sdk/"
+    },
+    "python-flask": {
+      "version": "2.3.3-2",
+      "url": "https://archlinux.org/packages/extra/any/python-flask/"
+    },
+    "ruby-base64": {
+      "version": "0.1.1-4",
+      "url": "https://archlinux.org/packages/extra/any/ruby-base64/"
+    }
+  }
 }

@@ -1,3 +1,7 @@
+[__config__]
+oldver = "watchlist.current-versions.json"
+newver = "~/.local/state/watchlist.new-versions.json"
+
 [dotnet-sdk]
 source = "archpkg"
 archpkg = "dotnet-sdk"

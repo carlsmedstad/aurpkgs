@@ -13,4 +13,6 @@ check-versions:
 
 .PHONY: check-watchlist
 check-watchlist:
-	./check-watchlist
+	keyfile="$${XDG_CONFIG_HOME:-$HOME/.config}/nvchecker/keyfile.toml" \
+		nvchecker -k "$$keyfile" -c watchlist.nvchecker.toml
+	nvcmp --exit-status -c watchlist.nvchecker.toml
