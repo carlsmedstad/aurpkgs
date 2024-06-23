@@ -5,7 +5,7 @@
 pkgname=powershell-bin
 _pkgname=${pkgname%-bin}
 pkgver=7.4.3
-pkgrel=1
+pkgrel=2
 pkgdesc="A cross-platform automation and configuration tool/framework (binary package)"
 arch=(x86_64 armv7h aarch64)
 url="https://github.com/Powershell/Powershell"
@@ -41,6 +41,8 @@ package() {
 
   install -dm755 "$pkgdir/usr/lib/$_pkgname-$pkgnum"
   cp -a -t "$pkgdir/usr/lib/$_pkgname-$pkgnum" ./*
+  # The pwsh executable is not executable in the archive, for some reason.
+  chmod 755 "$pkgdir/usr/lib/$_pkgname-$pkgnum/pwsh"
 
   install -dm755 "$pkgdir/usr/bin"
   ln -s "/usr/lib/$_pkgname-$pkgnum/pwsh" "$pkgdir/usr/bin/pwsh"
