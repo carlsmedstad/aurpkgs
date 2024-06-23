@@ -1,11 +1,11 @@
-# Maintainer: Carl Smedstad <carl.smedstad at protonmail dot com>
+# Maintainer: Carl Smedstad <carsme@archlinux.org>
 # Contributor: andmars <andreas.marschall @ unitybox.de>
 # Contributor: PyroPeter <googlemail.com @ abi1789>
 # Contributor: Ivan Shapovalov <intelfx@intelfx.name>
 
 pkgname=hplip-plugin
-pkgver=3.23.12
-pkgrel=3
+pkgver=3.24.4
+pkgrel=1
 pkgdesc="Binary plugin for HPs hplip printer driver library"
 arch=(x86_64 aarch64 armv6h armv7h i686)
 url="https://developers.hp.com/hp-linux-imaging-and-printing/binary_plugin.html"
@@ -20,13 +20,12 @@ depends=(
   sane
 )
 backup=(var/lib/hp/hplip.state)
-
 source=(
   "https://developers.hp.com/sites/default/files/hplip-$pkgver-plugin.run"
   "https://developers.hp.com/sites/default/files/hplip-$pkgver-plugin.run.asc"
 )
 sha256sums=(
-  '402799c0c8e2efafc8452a5a0929b06efbfd7bee2ff8ce060bdc447b2a34067f'
+  '1f3c6bdd25661a8a2e18153655d6f06f028c1d9c308d69c8ecfd7767a2d0c5aa'
   'SKIP'
 )
 validpgpkeys=('4ABA2F66DBD5A95894910E0673D770CDA59047B9') # HPLIP (HP Linux Imaging and Printing) <hplip@hp.com>
