@@ -41,6 +41,7 @@ package() {
 
   install -dm755 "$pkgdir/usr/lib/$_pkgname-$pkgnum"
   cp -a -t "$pkgdir/usr/lib/$_pkgname-$pkgnum" ./*
+  chmod 755 "$pkgdir/usr/lib/$_pkgname-$pkgnum/pwsh";
 
   install -dm755 "$pkgdir/usr/bin"
   ln -s "/usr/lib/$_pkgname-$pkgnum/pwsh" "$pkgdir/usr/bin/pwsh"
