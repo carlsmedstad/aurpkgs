@@ -1,4 +1,0 @@
-[munipack]
-source = "regex"
-url = "https://integral.physics.muni.cz/ftp/munipack/"
-regex = '<a href="munipack-(\d+\.\d+\.\d+).tar.gz"'
