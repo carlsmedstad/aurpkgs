@@ -1,4 +1,0 @@
-[mirrord]
-source = "github"
-github = "metalbear-co/mirrord"
-use_latest_release = true
