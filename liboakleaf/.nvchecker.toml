@@ -1,4 +1,0 @@
-[liboakleaf]
-source = "regex"
-url = "http://integral.physics.muni.cz/hg/oakleaf/tags"
-regex = '<a href="/hg/oakleaf/rev/(\d+\.\d+\.\d+)">'
