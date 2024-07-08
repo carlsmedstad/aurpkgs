@@ -1,5 +1,0 @@
-[slack-term]
-source = "github"
-github = "jpbruinsslot/slack-term"
-prefix = "v"
-use_latest_release = true
