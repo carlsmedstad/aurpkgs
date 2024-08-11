@@ -1,5 +1,0 @@
-[transqlate]
-source = "gitlab"
-gitlab = "dalibo/transqlate"
-use_max_tag = true
-prefix = "v"
