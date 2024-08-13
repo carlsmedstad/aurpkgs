@@ -1,6 +1,0 @@
-*
-!.gitignore
-!.nvchecker.toml
-!.SRCINFO
-!PKGBUILD
-!fix-pytest-asyncio-usage.patch
