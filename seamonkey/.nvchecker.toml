@@ -1,4 +1,0 @@
-[seamonkey]
-source = "regex"
-url = "https://www.seamonkey-project.org/releases/"
-regex = '<b>SeaMonkey (\d+\.\d+\.\d+.\d+)</b>'
