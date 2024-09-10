@@ -1,3 +1,0 @@
-[python-environ-config]
-source = "pypi"
-pypi = "environ-config"
