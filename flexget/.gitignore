@@ -1,7 +1,0 @@
-*
-!.gitignore
-!.nvchecker.toml
-!.SRCINFO
-!PKGBUILD
-!flexget.service
-!flexget@.service
