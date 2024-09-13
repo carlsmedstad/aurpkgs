@@ -1,5 +1,0 @@
-[krew]
-source = "github"
-github = "kubernetes-sigs/krew"
-prefix = "v"
-use_latest_release = true
