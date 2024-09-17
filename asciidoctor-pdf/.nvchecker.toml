@@ -1,5 +1,0 @@
-[asciidoctor-pdf]
-source = "github"
-github = "asciidoctor/asciidoctor-pdf"
-prefix = "v"
-use_latest_release = true
