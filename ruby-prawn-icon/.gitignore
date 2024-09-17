@@ -1,7 +1,0 @@
-*
-!.gitignore
-!.nvchecker.toml
-!.SRCINFO
-!PKGBUILD
-!remove-redundant-dev-dependencies.patch
-!remove-failing-test.patch
