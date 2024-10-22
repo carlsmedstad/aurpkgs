@@ -1,3 +1,0 @@
-[fluentd]
-source = "gems"
-gems = "fluentd"
