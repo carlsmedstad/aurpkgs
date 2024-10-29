@@ -1,6 +1,0 @@
-*
-!.gitignore
-!.nvchecker.toml
-!.SRCINFO
-!PKGBUILD
-!0001-dont-include-tests-in-built-wheel.patch
