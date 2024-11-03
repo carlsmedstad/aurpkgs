@@ -1,4 +1,0 @@
-[cubicsdr]
-source = "github"
-github = "cjcliffe/CubicSDR"
-use_latest_release = true
