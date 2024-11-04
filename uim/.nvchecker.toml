@@ -1,4 +1,0 @@
-[uim]
-source = "github"
-github = "uim/uim"
-use_latest_release = true
