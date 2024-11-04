@@ -1,4 +1,0 @@
-[gcstar]
-source = "git"
-git = "https://gitlab.com/GCstar/GCstar.git"
-prefix = "v"
