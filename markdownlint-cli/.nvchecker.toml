@@ -1,3 +1,0 @@
-[markdownlint-cli]
-source = "npm"
-npm = "markdownlint-cli"

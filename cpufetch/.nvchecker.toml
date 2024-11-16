@@ -1,5 +1,0 @@
-[cpufetch]
-source = "github"
-github = "Dr-Noob/cpufetch"
-prefix = "v"
-use_latest_release = true
