@@ -1,4 +1,0 @@
-[python-pybrowsers]
-source = "github"
-github = "roniemartinez/browsers"
-use_latest_release = true
