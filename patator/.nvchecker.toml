@@ -1,4 +1,0 @@
-[patator]
-source = "github"
-github = "lanjelot/patator"
-use_max_tag = true
