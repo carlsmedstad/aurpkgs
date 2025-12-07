@@ -1,7 +1,9 @@
 # Maintainer: Carl Smedstad <carsme@archlinux.org>
+# Contributor: envolution
+# shellcheck shell=bash disable=SC2034,SC2154
 
 pkgname=mvfst
-pkgver=2024.10.28.00
+pkgver=2025.11.24.00
 pkgrel=1
 pkgdesc="An implementation of the QUIC transport protocol"
 arch=(x86_64)
@@ -9,9 +11,9 @@ url="https://github.com/facebook/mvfst"
 license=(MIT)
 depends=(
   double-conversion
-  fizz
+  fizz=$pkgver
   fmt
-  folly
+  folly=$pkgver
   gcc-libs
   gflags
   glibc
@@ -68,7 +70,7 @@ provides=(
   libmvfst_transport_settings_functions.so
 )
 source=("$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz")
-sha256sums=('cafe975b1dc0ba6656fcaffea3c7281816e919bbfd1a7c6969fb38f9ae700b40')
+sha256sums=('1e2bca4229658aeb4c4de98eed6f8c17f6c6dee2fddccf8b218910080bb2c488')
 
 prepare() {
   cd $pkgname-$pkgver
@@ -99,3 +101,4 @@ package() {
   DESTDIR="$pkgdir" cmake --install build
   install -vDm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE
 }
+# vim:set ts=2 sw=2 et:
