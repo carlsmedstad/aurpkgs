@@ -1,5 +1,4 @@
 [espanso]
-source = "github"
-github = "espanso/espanso"
+source = "git"
+git = "https://github.com/espanso/espanso.git"
 prefix = "v"
-use_latest_release = true

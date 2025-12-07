@@ -4,3 +4,4 @@
 !.SRCINFO
 !PKGBUILD
 !espanso-wayland.install
+!*.patch
