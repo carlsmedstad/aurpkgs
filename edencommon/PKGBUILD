@@ -1,7 +1,9 @@
 # Maintainer: Carl Smedstad <carsme@archlinux.org>
+# Contributor: envolution
+# shellcheck shell=bash disable=SC2034,SC2154
 
 pkgname=edencommon
-pkgver=2024.10.28.00
+pkgver=2025.10.20.00
 pkgrel=1
 pkgdesc="Shared library for Watchman and Eden projects"
 arch=(x86_64)
@@ -9,9 +11,10 @@ url="https://github.com/facebookexperimental/edencommon"
 license=(MIT)
 depends=(
   boost-libs
-  fb303
+  boost
+  fb303=$pkgver
   fmt
-  folly
+  folly=$pkgver
   gcc-libs
   glibc
   google-glog
@@ -20,7 +23,7 @@ makedepends=(
   boost
   cmake
   gtest
-  mvfst
+  mvfst=$pkgver
 )
 provides=(
   libedencommon_os.so
@@ -33,10 +36,8 @@ source=(
   "$pkgname-$pkgver.tar.gz::$url/archive/v$pkgver.tar.gz"
   "build-shared-libraries.patch"
 )
-sha256sums=(
-  '28b8e2029f8d9d8039d13cd25d6901e1b48127fae8a3b7ed944fb6fea6ecafc2'
-  '1f351de94a786c8be397c07454a48d28a0dd0b758924792e6e3f1f49405c492a'
-)
+sha256sums=('124b3ef1c28b5ad356c0ce13e8b2b52b84b85d46acb86e6e99b8345000c24015'
+            '1f351de94a786c8be397c07454a48d28a0dd0b758924792e6e3f1f49405c492a')
 
 prepare() {
   cd $pkgname-$pkgver
@@ -65,3 +66,4 @@ package() {
   DESTDIR="$pkgdir" cmake --install build
   install -vDm644 -t "$pkgdir/usr/share/licenses/$pkgname" LICENSE
 }
+# vim:set ts=2 sw=2 et:
