@@ -1,5 +1,0 @@
-[bicep]
-source = "github"
-github = "Azure/bicep"
-prefix = "v"
-use_latest_release = true
