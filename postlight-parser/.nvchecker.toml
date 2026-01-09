@@ -1,3 +1,0 @@
-[postlight-parser]
-source = "npm"
-npm = "@postlight/parser"
