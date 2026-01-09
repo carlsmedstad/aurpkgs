@@ -1,4 +1,0 @@
-[qatlib]
-source = "github"
-github = "intel/qatlib"
-use_latest_release = true
