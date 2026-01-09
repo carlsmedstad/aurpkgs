@@ -1,5 +1,0 @@
-[fizz]
-source = "github"
-github = "facebookincubator/fizz"
-prefix = "v"
-use_latest_release = true
