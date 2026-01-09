@@ -1,4 +1,0 @@
-[minijinja]
-source = "github"
-github = "mitsuhiko/minijinja"
-use_latest_release = true
