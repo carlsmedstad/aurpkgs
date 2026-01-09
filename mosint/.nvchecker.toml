@@ -1,5 +1,0 @@
-[mosint]
-source = "github"
-github = "alpkeskin/mosint"
-prefix = "v"
-use_latest_release = true
