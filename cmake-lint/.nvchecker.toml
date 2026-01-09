@@ -1,3 +1,0 @@
-[cmake-lint]
-source = "pypi"
-pypi = "cmakelint"
