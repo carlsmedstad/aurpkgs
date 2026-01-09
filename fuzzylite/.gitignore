@@ -1,8 +1,0 @@
-*
-!.gitignore
-!.nvchecker.toml
-!.SRCINFO
-!PKGBUILD
-!CHANGELOG
-!remove-werror.patch
-!fix-catch-glibc-compatibility.patch
