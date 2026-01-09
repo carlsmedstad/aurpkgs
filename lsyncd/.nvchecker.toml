@@ -1,5 +1,0 @@
-[lsyncd]
-source = "github"
-github = "lsyncd/lsyncd"
-prefix = "v"
-use_latest_release = true
